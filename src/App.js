@@ -4,17 +4,16 @@ import Result from './pages/word-data/word-data.component';
 import Homepage from "./pages/homepage/homepage.component";
 import Navbar from './components/navbar/navbar.component';
 import Container from '@material-ui/core/Container';
-import { Switch, Route, useLocation } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import "./styles.css";
 // import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import { CssBaseline, Hidden } from '@material-ui/core';
+import { CssBaseline } from '@material-ui/core';
 import Footer from './components/footer/Footer';
 
 export default function App() {
   // const x = useMediaQuery('(prefers-color-scheme: dark)'); 
   const [prefersDarkMode, setTheme] = useState(true)
-  const location = useLocation();
   const theme = React.useMemo(
     () =>
       createMuiTheme({
